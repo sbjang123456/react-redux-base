@@ -9,17 +9,9 @@ const initialState = 0;
 const counter = (state = initialState, action) => {
     switch (action.type) {
         case PLUS:
-            if (action.count) {
-                return state + action.count;
-            } else {
-                return state + 1;
-            }
+            return action.count ? state + action.count : state + 1;
         case MINUS:
-            if (action.count) {
-                return state - action.count;
-            } else {
-                return state - 1;
-            }
+            return action.count ? state - action.count : state - 1;
         default:
             return state;
     }
