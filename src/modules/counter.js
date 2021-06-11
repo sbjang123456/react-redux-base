@@ -1,5 +1,5 @@
-const PLUS = 'main/PLUS';
-const MINUS = 'main/MINUS';
+const PLUS = 'counter/PLUS';
+const MINUS = 'counter/MINUS';
 
 export const plusCounter = (count) => ({ type: PLUS, count });
 export const minusCounter = (count) => ({ type: MINUS, count });
